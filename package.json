@@ -1,0 +1,24 @@
+{
+  "name": "aivtuber",
+  "version": "1.0.0",
+  "description": "AIAssistant",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node source/index/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/setimmediate": "^1.0.4",
+    "axios": "^1.8.1",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "groq-sdk": "0.15.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
