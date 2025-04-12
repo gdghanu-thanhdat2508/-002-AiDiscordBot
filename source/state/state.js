@@ -17,11 +17,12 @@ class State {
 exports.State = State;
 class Modules {
     llm;
-    tts;
+    // tts: ITextToSpeech;
     input;
-    constructor(_llm, _tts, _input) {
+    constructor(_llm, _input) {
+        //_tts: ITextToSpeech
         this.llm = _llm;
-        this.tts = _tts;
+        // this.tts = _tts
         this.input = _input;
     }
 }

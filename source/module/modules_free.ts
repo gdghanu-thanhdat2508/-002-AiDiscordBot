@@ -6,7 +6,7 @@ export async function freeLoadedModule() {
 
     const modules = Hikari.modules;
     await modules?.llm.free();
-    await modules?.tts.free();
+    // await modules?.tts.free();
     await modules?.input.free();
     Hikari.modules = undefined
 }

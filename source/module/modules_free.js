@@ -8,7 +8,7 @@ async function freeLoadedModule() {
     // }
     const modules = state_1.Hikari.modules;
     await modules?.llm.free();
-    await modules?.tts.free();
+    // await modules?.tts.free();
     await modules?.input.free();
     state_1.Hikari.modules = undefined;
 }

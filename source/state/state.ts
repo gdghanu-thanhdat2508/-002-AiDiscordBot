@@ -2,7 +2,7 @@ import { getAuth } from "../auth/get_auth";
 import { getCharacter } from "../characters/get_character";
 import { IInputSystem } from "../input_system/input_interface";
 import { ILargeLanguageModel } from "../llms/llms_interface";
-import { ITextToSpeech } from "../tts/tts_interface";
+// import { ITextToSpeech } from "../tts/tts_interface";
 import { Character } from "../types/character";
 import { Message } from "../types/message";
 
@@ -21,12 +21,13 @@ export class State {
 
 export class Modules {
     llm: ILargeLanguageModel;
-    tts: ITextToSpeech;
+    // tts: ITextToSpeech;
     input: IInputSystem;
 
-    constructor(_llm: ILargeLanguageModel, _tts: ITextToSpeech, _input: IInputSystem) {
+    constructor(_llm: ILargeLanguageModel, _input: IInputSystem) {
+        //_tts: ITextToSpeech
         this.llm = _llm
-        this.tts = _tts
+        // this.tts = _tts
         this.input = _input
     }
 }
